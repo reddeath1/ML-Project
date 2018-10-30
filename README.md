@@ -16,12 +16,13 @@ The following are procedures to follow inorder to get ahead with this project
 This will install required database table for this project
 
 # Expectation
+    Home
 ![Alt text](https://github.com/reddeath1/ML-Project/blob/master/assets/images/showcase.PNG?raw=true "showcase")
 
-#
+# Checkout 
 ![Alt text](https://github.com/reddeath1/ML-Project/blob/master/assets/images/showcase2.PNG?raw=true "showcase")
 
-#
+# Administration area
 ![Alt text](https://github.com/reddeath1/ML-Project/blob/master/assets/images/showcase1.PNG?raw=true "showcase")
 
 # Technical Details
@@ -65,5 +66,16 @@ This will install required database table for this project
       - Session.php
         -
         Responsible for handling login information and rechecking.
-        
+ 
+ 5. Database
+    -
+    This hold files for database table creation and manipulation.
+ 6. Views
+    -
+    This folder hold the pages that are see by the user.
+    
+ 
+ # How it's works
+ ![Alt text](https://github.com/reddeath1/ML-Project/blob/master/assets/images/database.PNG?raw=true "database")
+
     
