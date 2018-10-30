@@ -1,0 +1,436 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.top-header{
+    background: #16A085;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1200;
+    float: none;
+    left: 0;
+    height: 50px;
+}
+
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover{
+    color: #16A085;
+}
+
+.top-header > div > div > .navbar-nav > li > a{
+    color: rgba(255,255,255,1);
+}
+
+.top-header > div > div > .navbar-nav > li > a:hover{
+    color: rgba(255,255,255,.5);
+}
+
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 50px;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.navbar-login
+{
+    width: 305px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.navbar-login-session
+{
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.icon-size
+{
+    font-size: 87px;
+}
+
+#custom-search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+
+.main-container{
+    margin-top: 135px;
+}
+
+.jumbotron{
+    height: 400px;
+    margin-top: 135px;
+    background: url("../images/img.jpg");
+    padding: 0px;
+}
+
+.jumbotron > .jwrapper{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    background: rgba(10,10,10,.85);
+    padding: 48px 0;
+    color: #fff;
+}
+
+.jumbotron > .jwrapper > div > h1{
+    margin-top: 90px;
+}
+
+h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
+
+#ads-container{
+    width: 90%;
+}
+
+.card{
+    width: 300px;
+    padding: 0px;
+    float: left;
+}
+.product-grid4,.product-grid4 .product-image4{position:relative;}
+.product-grid4{
+    font-family:Poppins,sans-serif;
+    text-align:center;
+    border-radius:5px;
+    overflow:hidden;
+    z-index:1;
+    transition:all .3s ease 0s;
+}
+.product-grid4:hover{box-shadow:0 0 10px rgba(0,0,0,.2)}
+.product-grid4 .product-image4 a{display:block}
+.product-grid4 .product-image4 img{width:100%;height:auto}
+.product-grid4 .pic-1{opacity:1;transition:all .5s ease-out 0s}
+.product-grid4:hover .pic-1{opacity:0}
+.product-grid4 .pic-2{position:absolute;top:0;left:0;opacity:0;transition:all .5s ease-out 0s}
+.product-grid4:hover .pic-2{opacity:1}
+.product-grid4 .social{width:180px;padding:0;margin:0 auto;list-style:none;position:absolute;right:0;left:0;top:50%;transform:translateY(-50%);transition:all .3s ease 0s}
+.product-grid4 .social li{display:inline-block;opacity:0;transition:all .7s}
+.product-grid4 .social li:nth-child(1){transition-delay:.15s}
+.product-grid4 .social li:nth-child(2){transition-delay:.3s}
+.product-grid4 .social li:nth-child(3){transition-delay:.45s}
+.product-grid4:hover .social li{opacity:1}
+.product-grid4 .social li a{color:#222;background:#fff;font-size:17px;line-height:36px;width:40px;height:36px;border-radius:2px;margin:0 5px;display:block;transition:all .3s ease 0s}
+.product-grid4 .social li a:hover{color:#fff;background:#16a085}
+.product-grid4 .social li a:after,.product-grid4 .social li a:before{content:attr(data-tip);color:#fff;background-color:#000;font-size:12px;line-height:20px;border-radius:3px;padding:0 5px;white-space:nowrap;opacity:0;transform:translateX(-50%);position:absolute;left:50%;top:-30px}
+.product-grid4 .social li a:after{content:'';height:15px;width:15px;border-radius:0;transform:translateX(-50%) rotate(45deg);top:-22px;z-index:-1}
+.product-grid4 .social li a:hover:after,.product-grid4 .social li a:hover:before{opacity:1}
+.product-grid4 .product-discount-label,.product-grid4 .product-new-label{color:#fff;background-color:#16a085;font-size:13px;font-weight:800;text-transform:uppercase;line-height:45px;height:45px;width:45px;border-radius:50%;position:absolute;left:10px;top:15px;transition:all .3s}
+.product-grid4 .product-discount-label{left:auto;right:10px;background-color:#d7292a}
+.product-grid4:hover .product-new-label{opacity:0}
+.product-grid4 .product-content{padding:25px}
+.product-grid4 .title{font-size:15px;font-weight:400;text-transform:capitalize;margin:0 0 7px;transition:all .3s ease 0s}
+.product-grid4 .title a{color:#222}
+.product-grid4 .title a:hover{color:#16a085}
+.product-grid4 .price{color:#16a085;font-size:14px;font-weight:700;text-align:center;margin:20px 2px 15px 0;display:block}
+.product-grid4 .price span{color:#222;font-size:13px;margin-top:10px;font-weight:400;letter-spacing:0;text-align:left;vertical-align:middle;display:inline-block}
+.product-grid4 .add-to-cart{
+    border:1px solid #e5e5e5;display:inline-block;
+    padding:10px 20px;
+    color:#fff;font-weight:600;
+    font-size:14px;
+    background:#16a085;
+    border-radius:4px;
+    transition:all .3s;
+    margin-top: 20px;
+}
+.product-grid4:hover .add-to-cart{border:1px solid transparent;background:#16a085;color:#fff}
+.product-grid4 .add-to-cart:hover{background-color:#505050;box-shadow:0 0 10px rgba(0,0,0,.5)}
+@media only screen and (max-width:990px){.product-grid4{margin-bottom:30px}
+}
+
+.wr > div > div > .setup-content{
+    display: none;
+}
+
+.wr > div > div > .setup-content:nth-child(2){
+    display: block;
+}
+
+
+.contents > div > h1{
+    margin: 10px 0;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover{
+    background: #16A085;
+    color: #fff;
+}
+
+.nav-pills > li > a{
+    color: #16A085;
+}
+
+.page-footer{
+    background: #263238!important;
+    color: #fff;
+    margin-top: 20px;
+}
+
+footer.page-footer .footer-copyright {
+    overflow: hidden;
+    background-color: rgba(0,0,0,.2);
+    color: rgba(255,255,255,.6);
+    padding: 15px 0;
+}
+
+.di{
+    border: 1px solid #ccc;
+
+    margin: 4px 4px 4px 0;
+
+    display: inline-block;
+
+    padding: 3px;
+
+    font-size: 12px;
+
+    min-width: 200px;
+
+    background: #eee;
+
+    border-radius: 2px;
+}
+
+.owl-buttons {
+    display: none;
+}
+.owl-carousel:hover .owl-buttons {
+    display: block;
+}
+
+.owl-item {
+    text-align: center;
+    background: greenyellow;
+}
+
+.owl-item > div{
+    width: 150px;
+    height: 150px;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+    background: transparent;
+    color: #869791;
+    font-size: 40px;
+    line-height: 300px;
+    margin: 0;
+    padding: 0 60px;
+    position: absolute;
+    top: 0;
+}
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+    left: 0;
+    padding-left: 20px;
+}
+.owl-theme .owl-controls .owl-buttons .owl-next {
+    right: 0;
+    padding-right: 20px;
+}
+
+#cats{
+    margin-top: -130px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+#cats > div > p{
+    text-align: center;
+    padding: 10px 0 20px 0;
+    font-size: 24px;
+}
+
+#modalQuickView,#login-modal{
+    z-index: 1600;
+    padding-top:10%;
+    font-size: 15px;
+}
+
+input{
+    border: none;
+}
+
+
+.nav-tabs{
+    position: relative;
+    width: 100%;
+}
+.tab-pane{
+    position: absolute;
+    background: #fff;
+    width: 100%;
+}
+
+
+#login-modal .modal-dialog {
+    width: 350px;
+}
+
+#login-modal input[type=text], input[type=password] {
+    margin-top: 10px;
+}
+
+#div-login-msg,
+#div-lost-msg,
+#div-register-msg {
+    border: 1px solid #dadfe1;
+    height: 30px;
+    line-height: 28px;
+    transition: all ease-in-out 500ms;
+}
+
+#div-login-msg.success,
+#div-lost-msg.success,
+#div-register-msg.success {
+    border: 1px solid #68c3a3;
+    background-color: #c8f7c5;
+}
+
+#div-login-msg.error,
+#div-lost-msg.error,
+#div-register-msg.error {
+    border: 1px solid #eb575b;
+    background-color: #ffcad1;
+}
+
+#icon-login-msg,
+#icon-lost-msg,
+#icon-register-msg {
+    width: 30px;
+    float: left;
+    line-height: 28px;
+    text-align: center;
+    background-color: #dadfe1;
+    margin-right: 5px;
+    transition: all ease-in-out 500ms;
+}
+
+#icon-login-msg.success,
+#icon-lost-msg.success,
+#icon-register-msg.success {
+    background-color: #68c3a3 !important;
+}
+
+#icon-login-msg.error,
+#icon-lost-msg.error,
+#icon-register-msg.error {
+    background-color: #eb575b !important;
+}
+
+#img_logo {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+/* #########################################
+   #    override the bootstrap configs     #
+   ######################################### */
+
+.modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: .8;
+}
+
+.modal-content {
+    background-color: #ececec;
+    border: 1px solid #bdc3c7;
+    border-radius: 0px;
+    outline: 0;
+}
+
+.modal-header {
+    min-height: 16.43px;
+    padding: 15px 15px 15px 15px;
+    border-bottom: 0px;
+}
+
+.modal-body {
+    position: relative;
+    padding: 5px 15px 5px 15px;
+}
+
+.modal-footer {
+    padding: 15px 15px 15px 15px;
+    text-align: left;
+    border-top: 0px;
+}
+
+.checkbox {
+    margin-bottom: 0px;
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;
+}
+
+.btn-lg, .btn-group-lg>.btn {
+    border-radius: 0px;
+}
+
+.btn-link {
+    padding: 5px 10px 0px 0px;
+    color: #95a5a6;
+}
+
+.btn-link:hover, .btn-link:focus{
+    color: #68c3a3;
+    text-decoration: none;
+}
+
+.pr{
+    background: #68c3a3;
+}
+
+.glyphicon {
+    top: 0px;
+}
+
+.form-control {
+    border-radius: 0px;
+}
