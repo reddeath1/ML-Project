@@ -6,7 +6,7 @@
  * Time: 9:24 PM
  */
 
-define('ROOT',(preg_match('/localhost/',$_SERVER['SERVER_NAME'])) ? $_SERVER['DOCUMENT_ROOT'].'/ML Projec': $_SERVER['DOCUMENT_ROOT']);
+define('ROOT',(preg_match('/localhost/',$_SERVER['SERVER_NAME'])) ? $_SERVER['DOCUMENT_ROOT'].'/ML Project': $_SERVER['DOCUMENT_ROOT']);
 
 include_once (ROOT.'/database/DB.php');
 class Ajx extends DB
@@ -20,8 +20,6 @@ class Ajx extends DB
         $this->processor();
         $this->URL = (preg_match('/localhost/',$this->url())) ? $this->url().'/ML Project' : $this->url();
     }
-
-
 
     private function url(){
         $page_url   = 'http';
@@ -270,7 +268,7 @@ class Ajx extends DB
                         <tr>
                             <td>
                                 <div class=\"row\">
-                                    <div class=\"col-sm-4 hidden-xs\"><img src=\"$this->URI/assets/images/$media\" alt=\"...\" class=\"img-responsive\"/></div>
+                                    <div class=\"col-sm-4 hidden-xs\"><img src=\"$this->URL/assets/images/$media\" alt=\"...\" class=\"img-responsive\"/></div>
                                     <div class=\"col-sm-7\">
                                         <h4 class=\"nomargin\">$title</h4>
                                         <p>$desc</p>
