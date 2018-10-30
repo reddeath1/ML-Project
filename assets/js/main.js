@@ -6,24 +6,27 @@ $(document).ready(function() {
 
     var lastEventId;
     (function ($$,$) {
+        if($('#contents_ads').element !== null){
 
-        $$.onMessage({
-            meth:"get",
-            url:user.url+'/core/Ajx.php',
-            query:"action=getPost",
-            interval:1000,
-            success:function(data){
-                var result = JSON.parse(data.data);
+            $('#contents_ads').html("Loading ....");
+            $$.onMessage({
+                meth:"get",
+                url:user.url+'/core/Ajx.php',
+                query:"action=getPost",
+                interval:1000,
+                success:function(data){
+                    var result = JSON.parse(data.data);
 
-                if(typeof result.success !== 'undefined' && lastEventId !== result.success.lastEventId){
-                    $('#contents_ads').html(result.success.result);
+                    if(typeof result.success !== 'undefined' && lastEventId !== result.success.lastEventId){
+                        $('#contents_ads').html(result.success.result);
+                    }
+
+                    lastEventId = result.success.lastEventId;
+
+                    steps();
                 }
-
-                lastEventId = result.success.lastEventId;
-
-                steps();
-            }
-        });
+            });
+        }
 
     })(Exile().http,$$);
 
@@ -239,12 +242,16 @@ $(document).ready(function() {
         }, $msgShowTime);
     }
 
-
-
     console.log(user);
 });
 
+function issueInvoice() {
+    alert("Working on it!");
+}
 
+function deleteInvoice() {
+    alert("Working on it!");
+}
 
 function save(id,e) {
     if(!user.isLoggedIn) { $('#login-modal').modal(); return false }
@@ -263,7 +270,7 @@ function save(id,e) {
 
             if(typeof result.success !== 'undefined'){
                 $(e).text('Saved');
-                $(e.parentElement).html("<a href='"+user.url+"/profile/"+u+"'>View Cart</a>");
+                $(e.parentElement).html("<a href='"+user.url+"/dashboard'>View Cart</a>");
             }
 
             if(typeof result.error !== 'undefined'){

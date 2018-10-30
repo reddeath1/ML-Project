@@ -42,6 +42,10 @@ class Core
 
    }
 
+   public function dashboard(){
+       $this->renderer('dashboard');
+   }
+
    public function Home(){
        $this->renderer('home');
    }

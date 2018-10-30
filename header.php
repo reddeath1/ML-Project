@@ -59,7 +59,7 @@ if($session->loggedIn){
 
     $user_menu1 = '<ul class="dropdown-menu">
                                 <li><a href="/profile/'.$first_name.'">Profile</a></li>
-                                <li><a href="/dashboard">Dashboard</a></li>
+                                <li><a href="/dashboard/'.$ud.'">Dashboard</a></li>
                             </ul>';
 }
 

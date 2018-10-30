@@ -20,6 +20,7 @@ class Session extends DB {
     {
 
         parent::__construct();
+        session_start();
         $this->session_state();
         $this->cookies_state();
     }
@@ -81,7 +82,7 @@ class Session extends DB {
         $id = $this->id;
 
         $this->update(json_encode(array('table'=>'users',
-            'cols'=>"last_login = now()",
+            'data'=>"last_login = now()",
             'where'=>"id = '$id' AND first_name = '$fn' AND last_name = '$ln' LIMIT 1")));
     }
 }

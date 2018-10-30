@@ -25,7 +25,6 @@ define('ROOT',(preg_match('/localhost/',url())) ? $_SERVER['DOCUMENT_ROOT'].'/ML
 $default_user = 'Guest';
 
 require_once (ROOT.'/core/session.php');
-require_once (ROOT.'/core/Core.php');
 
 $isLoggedIn = $session->loggedIn;
 $ud = $session->id;
@@ -33,6 +32,11 @@ $user = $session->user;
 $first_name = $session->first_name;
 $email = $session->email;
 
+require_once (ROOT.'/core/Core.php');
+
+function uid(){
+    return $session->id;
+}
 
 $default_user = ($isLoggedIn) ? $first_name : $default_user;
 $isLoggedIn = ($isLoggedIn) ? 1 : 0;
