@@ -88,7 +88,15 @@ This will install required database table for this project
    how customer interact with sys including purchasing
    -
    When the customer save his/her ad on the cart.
-   the sys take his/her user id and ad id also dimension ad then store them to the cart table. later on then the payment will be issued.
+   the sys here how the sys do.
    
+   Take his/her user id.
+   
+   Take the ad id 
+   
+   Dimension id 
+   
+   Then store them to the cart table. later on then the payment will be issued.
+ 
    I will not explain on how the ads are store because I did not make a sys for this, as it seen the ads are stored duration the installation process.
    -
