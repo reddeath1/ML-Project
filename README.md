@@ -26,3 +26,31 @@ This will install required database table for this project
 
 # Technical Details
 
+# File Structure
+
+![Alt text](https://github.com/reddeath1/ML-Project/blob/master/assets/images/showcase3.PNG?raw=true "showcase")
+
+1.  Admin
+    -
+    This folder hold files/user info with the admin priviledge.
+    
+2.  Assets
+    -
+    This hold public files that are seen by the user/client. inside you will see the following folders.
+    -  CSS
+        -
+        This hold css files.
+    - Fonts
+        -
+        This hold fonts files
+    - Images
+        -
+        This hold media files
+3.  Config
+      -
+      This is the configurations folder. all demands that the project needs found on this folder 
+      inside there is actual config file that handles those demand.
+ 
+ 4. Core
+    -
+    
