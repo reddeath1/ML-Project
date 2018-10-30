@@ -50,6 +50,10 @@ class Core
        $this->renderer('home');
    }
 
+   public function Logout(){
+       $this->renderer('logout');
+   }
+
    public function Profile(){
        $this->renderer('profile');
    }
