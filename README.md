@@ -53,4 +53,11 @@ This will install required database table for this project
  
  4. Core
     -
-    
+    In this folder hold important files for the project include.
+     - Ajx.php 
+        This for receiving the ajax call from the client and process them. Home page real time data use this file for it's data.
+        -
+     - Core.php
+        This file is responsible for handling the pages and making them user friendly e.g when you type http://yourdomain.com/install, this request is handled by this file.
+        
+        
