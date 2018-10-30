@@ -13,7 +13,7 @@ The following are procedures to follow inorder to get ahead with this project
 3. Create database name # ml
 4. Go to the url pointing this folder
 5. Type install e.g (http://yourdomain.com/install
-This will install required database table for this project
+This will install required database table and demo data for this project
 
 # Expectation
     Home
