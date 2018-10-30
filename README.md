@@ -77,5 +77,18 @@ This will install required database table for this project
  
  # How it's works
  ![Alt text](https://github.com/reddeath1/ML-Project/blob/master/assets/images/database.PNG?raw=true "database")
-
-    
+ 
+   users table 
+   -
+   As the image show.
+   users hold user information including his/her last presence.
+   
+   Customer Information
+   -
+   how customer interact with sys including purchasing
+   -
+   When the customer save his/her ad on the cart.
+   the sys take his/her user id and ad id also dimension ad then store them to the cart table. later on then the payment will be issued.
+   
+   I will not explain on how the ads are store because I did not make a sys for this, as it seen the ads are stored duration the installation process.
+   -
