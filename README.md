@@ -15,3 +15,5 @@ The following are procedures to follow inorder to get ahead with this project
 5. Type install e.g (http://yourdomain.com/install
 This will install required database table for this project
 
+
+
