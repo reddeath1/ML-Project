@@ -270,7 +270,7 @@ function save(id,e) {
 
             if(typeof result.success !== 'undefined'){
                 $(e).text('Saved');
-                $(e.parentElement).html("<a href='"+user.url+"/dashboard'>View Cart</a>");
+                $(e.parentElement).html("<a href='"+user.url+"/dashboard"+user.u+"'>View Cart</a>");
             }
 
             if(typeof result.error !== 'undefined'){

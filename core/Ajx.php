@@ -17,7 +17,7 @@ class Ajx extends DB
     public function  __construct()
     {
         parent::__construct();
-        $this->processor();
+            $this->processor();
     }
 
     private function url(){
