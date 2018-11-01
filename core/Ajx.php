@@ -18,7 +18,6 @@ class Ajx extends DB
     {
         parent::__construct();
         $this->processor();
-        $this->URL = (preg_match('/localhost/',$this->url())) ? $this->url().'/ML Project' : $this->url();
     }
 
     private function url(){
@@ -32,6 +31,9 @@ class Ajx extends DB
     }
 
     private function processor(){
+
+        $this->URL = (preg_match('/localhost/',$this->url())) ? $this->url().'/ML Project' : $this->url();
+        
         if(isset($_POST['action']) && !empty($_POST['action']) ||
             isset($_GET['action']) && !empty($_GET['action'])){
 
@@ -215,7 +217,7 @@ class Ajx extends DB
                 $title = $datum['title'];
                 $desc = $datum['desc_ad'];
                 $format = $datum['format'];
-                $type = $datum['banner'];
+                $type = $datum['type'];
                 $media = $datum['media'];
                 $campaign_id = $datum['campaign_id'];
                 $campaign_name = $datum['name'];
@@ -396,7 +398,7 @@ class Ajx extends DB
         ";
             }
 
-            $data = array('result'=>$result,'lastEventId'=>$last_id);
+            $data = array('result'=>$result,'lastEventId'=>$last_id,'url'=>$this->url());
         }else{
             $data = false;
         }
