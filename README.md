@@ -100,3 +100,11 @@ This will install required database table and demo data for this project
  
    I will not explain on how the ads are store because I did not make a sys for this, as it seen the ads are stored duration the installation process.
    -
+   
+   
+# Change Log
+
+Restructured the internal functions for the images.
+
+Images
+- Images where not showing when accessing the page on localhost/ML Project and not domain mydomain.com 
