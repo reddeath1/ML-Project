@@ -50,7 +50,8 @@ class Core
    }
 
    public function Logout(){
-       $this->renderer('logout');
+       ob_start();
+      echo "<script>window.location.href = '".URI."/logout.php'</script>";
    }
 
    public function Profile(){
@@ -83,7 +84,7 @@ class Core
    }
 
    public function install(){
-        header("Location:".URI.'/database/Tables.php');
+        echo "<script> window.location.href = '".URI."/database/Tables.php'</script>";
    }
 
    public function header(){

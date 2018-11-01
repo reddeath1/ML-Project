@@ -1,20 +1,10 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: reddeath
- * Date: 10/28/2018
- * Time: 1:22 AM
- */
-include_once ('config/Config.php');
-include_once 'head.php';
-?>
-
 
 <?php
 
+$URI = URI;
 $user_menu = '<ul class="dropdown-menu account">
-                            <li><a href="#"><i class="glyphicon glyphicon-menu-right"></i> Login </a></li>
-                            <li><a href="#"><i class="glyphicon glyphicon-menu-right"></i> Sign Up </a></li>
+                            <li><a ><i class="glyphicon glyphicon-menu-right"></i> Login </a></li>
+                            <li><a ><i class="glyphicon glyphicon-menu-right"></i> Sign Up </a></li>
                             
                         </ul>';
 
@@ -37,7 +27,7 @@ if($session->loggedIn){
                                     <div class="col-lg-8">'.$user.'</strong></p>
                                         <p class="text-left small">'.$email.'</p>
                                         <p class="text-left pr">
-                                            <a href="/profile/'.$first_name.'" class="btn btn-primary btn-block btn-sm">Profile</a>
+                                            <a href="'.$URI.'/profile/'.$first_name.'" class="btn btn-primary btn-block btn-sm">Profile</a>
                                         </p>
                                     </div>
                                 </div>
@@ -49,7 +39,7 @@ if($session->loggedIn){
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <p>
-                                            <a href="/logout" class="btn btn-danger btn-block">Logout</a>
+                                            <a href="'.$URI.'/logout" class="btn btn-danger btn-block">Logout</a>
                                         </p>
                                     </div>
                                 </div>
@@ -58,8 +48,8 @@ if($session->loggedIn){
                     </ul>';
 
     $user_menu1 = '<ul class="dropdown-menu">
-                                <li><a href="/profile/'.$first_name.'">Profile</a></li>
-                                <li><a href="/dashboard/'.$ud.'">Dashboard</a></li>
+                                <li><a href="'.$URI.'/profile/'.$first_name.'">Profile</a></li>
+                                <li><a href="'.$URI.'/dashboard/'.$ud.'">Dashboard</a></li>
                             </ul>';
 }
 
@@ -94,13 +84,13 @@ if($session->loggedIn){
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"><?php echo $title;?></a>
+                <a class="navbar-brand" href="<?php echo URI;?>"><?php echo $title;?></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class=" <?php echo ($core->page(1) === 'home' || empty($core->page(1))) ? 'active' :'' ?>"><a href="/">Home <span class="sr-only">(current)</span></a></li>
+                    <li class=" <?php echo ($core->page(1) === 'home' || empty($core->page(1))) ? 'active' :'' ?>"><a href="<?php echo URI;?>">Home <span class="sr-only">(current)</span></a></li>
                 </ul>
 
                 <div class="row">

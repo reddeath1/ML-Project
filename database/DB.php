@@ -62,7 +62,9 @@ class DB
         $cols = $param->cols;
         $where = (isset($param->where)) ? " WHERE ".$param->where : '';
 
-        return $this->con->query("SELECT $cols FROM $table $where");
+        $sql  = $this->con->query("SELECT $cols FROM $table $where");
+
+        return $sql;
     }
 
     public function query($param){

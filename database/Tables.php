@@ -123,7 +123,7 @@ class Tables extends DB
             first_name = 'admin',
             last_name  = 'admin',
             phone_number  = '0692424684',
-            email  = 'frankslayer1@gmail',
+            email  = 'frankslayer1@gmail.com',
             password  = '$p'
             ");
 

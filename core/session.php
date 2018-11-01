@@ -5,7 +5,6 @@
  * Date: 10/28/2018
  * Time: 3:03 AM
  */
-//define('ROOT',(preg_match('/localhost/',$_SERVER['SERVER_NAME'])) ? $_SERVER['DOCUMENT_ROOT'].'/ML Projec': $_SERVER['DOCUMENT_ROOT']);
 
 include_once (ROOT.'/database/DB.php');
 class Session extends DB {
@@ -28,12 +27,14 @@ class Session extends DB {
     public function session_state(){
         if(isset($_SESSION['ml_id']) &&  isset($_SESSION['ml_user'])){
             $this->id = preg_replace("[^0-9]","",$_SESSION['ml_id']);
-            $this->user = preg_replace("#[^a-z0-9-_. ]#i",'',$_COOKIE['ml_user']);
+
+          $this->user = preg_replace("#[^a-z0-9-_. ]#i",'',$_SESSION['ml_user']);
 
             if(!empty($this->id) && !empty($this->user)){
 
                 $this->loggedIn = $this->is_logged_in();
             }
+
         }
     }
 

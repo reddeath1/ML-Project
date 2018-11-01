@@ -5,10 +5,8 @@
  * Date: 10/30/2018
  * Time: 1:28 PM
  */
-$ROOT = (preg_match('/localhost/',$_SERVER['SERVER_NAME'])) ? $_SERVER['DOCUMENT_ROOT'].'/ML Projec': $_SERVER['DOCUMENT_ROOT'];
-include_once ($ROOT.'/config/Config.php');
 
-class  Dashboard extends DB {
+class  Dashboard extends session {
     public $URi;
 
     public function __construct()
@@ -25,10 +23,10 @@ class  Dashboard extends DB {
 
     public function contents($id = false,$user_id = false)
     {
-
         $data = array();
         $id = ($id) ? "WHERE c.id = '$id'" : '';
-        $user_id = ($user_id) ? "WHERE c.user_id = '$user_id'" : '';
+        $user_id = ($user_id) ? "WHERE c.user_id = '$user_id'" : "WHERE c.user_id = '$this->id'";
+        $both = '';
         if($id && !$id) {
             $both =  "$id AND c.user_id = '$user_id'";
             $id = '';
@@ -66,6 +64,8 @@ class  Dashboard extends DB {
                  * get dimensions
                  */
                 $param = array('query'=>"SELECT * FROM dimensions WHERE ad_id = '$ad_id'");
+
+                
                 $sql = $this->query(json_encode($param));
                 while ($row = $sql->fetch_array(MYSQLI_ASSOC)){
                     $dim_id = $row['id'];
@@ -87,8 +87,8 @@ class  Dashboard extends DB {
 
             $data = $result;
         }else{
-            $data = "<tr>
-                <td>No records was found!</td></tr>";
+            $data = "<tr>                
+                <td>No records was found! </td></tr>";
         }
 
         return $data;
@@ -114,7 +114,6 @@ $db = new Dashboard();
         </ul>
     </aside>
     <div class="mian">
-        <h1>Prakash </h1>
     </div>
 </div>
 
@@ -130,7 +129,7 @@ $db = new Dashboard();
                 <th class="text-center">Action</th>
             </tr>
             </thead>
-            <?php echo $db->contents(false,$db->page(2));?>
+            <?php echo $db->contents(false,$db->page(false,$db->id));?>
         </table>
     </div>
 
