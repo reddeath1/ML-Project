@@ -13,11 +13,7 @@ class Core
 
     public function __construct()
     {
-        $http = $_SERVER['REQUEST_URI'];
-        $this->URi = explode('/',$http);
-        $this->errors = array();
-
-        $this->page();
+        
     }
 
 
@@ -25,6 +21,9 @@ class Core
      * @return bool|void
      */
     public function page($page = false){
+        $http = $_SERVER['REQUEST_URI'];
+        $this->URi = explode('/',$http);
+        $this->errors = array();
         if(!$page){
             if(!empty(array_filter($this->URi))){
                 $p = (preg_match('/localhost/',URI)) ? ucfirst($this->URi[2]) : ucfirst($this->URi[1]);
