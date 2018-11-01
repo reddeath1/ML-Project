@@ -7,4 +7,5 @@
  */
 include_once ('config/Config.php');
 include_once ('header.php');
+$core->page();
 include "footer.php";
