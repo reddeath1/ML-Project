@@ -97,8 +97,7 @@ This will install required database table and demo data for this project
    Dimension id 
    
    Then store them to the cart table. later on then the payment will be issued.
- 
-   I will not explain on how the ads are store because I did not make a sys for this, as it seen the ads are stored duration the installation process.
+
    -
    
    
