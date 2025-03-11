@@ -186,7 +186,7 @@ class Tables extends DB
     public function install(){
         echo "<h3 style='color:brown'>Installing .....</h3>";
 
-//        echo "<p style='color:brown'>Creating database .....</p>";
+        echo "<p style='color:brown'>Creating database .....</p>";
         $this->createDB('ml');
         //print_r(error_get_last());
 
